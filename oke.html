@@ -1,0 +1,41 @@
+<div tabindex="0" class="restaurant-list" id="restaurant-list">
+  <div class="restaurant-item">
+      <h2>${pano.name}</h2>
+      <img src="${CONFIG.imageMedium + pano.pictureId}" alt="gambar-pano ${pano.pictureId}">
+      <p>City : ${pano.city}</p>
+      <p>Ratting : ${pano.rating}⭐️</p>
+      <p>${pano.description}</p>
+  </div>
+</div>
+
+
+<div class="restaurant-list">
+  <div class="restaurant-item">
+    <h2>${pano.name}</h2>
+    <img  src="${CONFIG.imageMedium + pano.pictureId}" alt="gambar-pano ${pano.pictureId}">
+    <p>City : ${pano.city}</p>
+      <p>Ratting : ${pano.rating}⭐️</p>
+      <p>${pano.description}</p><p></p>
+  </div>
+</div>
+
+<a href=""></a>
+
+<div class="container">
+  <div class="imageDetail">
+    <img class="pic" src="${CONFIG.imageMedium + panos.pictureId}" alt="gambar-pano ${panos.pictureId}">
+    <h2 class="right">${panos.name}</h2>
+    <p>Ratting : ${panos.rating}⭐️</p>
+    <h2 class="right">${panos.name}</h2>
+    <p>City : ${panos.city}</p>
+  </div>
+  <div>
+    <p>${panos.description}</p>
+  </div>
+</div>
+
+<P>
+  ${reso.menus.foods.map(food => `<li>${food.name}</li>)`.join("")}
+</P>
+
+

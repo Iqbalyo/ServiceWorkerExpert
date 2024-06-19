@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #11101b;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 100%;
+    background: #fefefe;
+    padding: 1.2rem;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+
+.name {
+    font-size: 25px;
+}
+
+.detail {
+    font-size: 25px;
+}
+
+.desk {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.pic {
+    float: left;
+    margin-top: 5px;
+    border-radius: 5%;
+    padding: 5px;
+    width: 40%;
+    height: auto;
+    margin-right: 25px;
+}
+
+/*  */
+
+
+
+
+.menu {
+    font-size: 20px;
+    border-radius: 15px;
+    background: #E8E8E8;
+    text-align: left;
+    margin-top: 10rem;
+
+}
+
+.menuIn {
+    margin-block: 1rem;
+    padding: 1.5rem;
+}
+
+
+.menuMinuman {
+    padding: 1rem;
+}
+
+.rev {
+    font-size: 20px;
+    border-radius: 15px;
+    margin-block: 1rem;
+    padding: 1rem;
+    background: #E8E8E8;
+}
+
+.revin {
+    margin-top: 10px;
+    background: #11101b;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    color: #fefefe;
+  
+    
+}
+
+/* like */
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11101b;
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.restaurant {
+
+    margin: 8px 0;
+
+}
+
+
+
+
+/*  */
+.right {
+    top: 0;
+    text-align: right;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+button {
+    margin-top: 50px;
+    background: #11101b;
+    border: none;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.drawer {
+    
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-bar ul li a {
+    min-width: 44px;
+    min-height: 44px;
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+    transform: translateY(-10px);
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+}
+
+.none {
+    list-style: none;
+}
+
+.hero {
+    width: 100%;
+    background-image: url("/src/public/images/heros/hero-image_2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    height: 500px;
+}
+
+
+.textIn {
+    text-align: center;
+    padding-top: 85px;
+    color: #fefefe;
+    font-size: 30px;
+
+}
+
+.Experience {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.transparant {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+.Browse {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #fefefe;
+    text-align: center;
+}
+
+.restaurant-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px;
+    background-color: #bf1722;
+    color: white;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.restaurant-item {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.restaurant-item h2 {
+    color: #fefefe;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.restaurant-item p {
+    margin-bottom: 5px;
+    color: #fefefe;
+    text-align: left;
+    font-size: 20px;
+}
+
+.restaurant-item h3 {
+    color: #fefefe;
+    font-size: 18px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    text-align: center;
+    background-color: #fefefe;
+}
+
+
+.restaurant-item .description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 503px) {
+    .textIn {
+        font-size: 20px;
+    }
+
+    .Experience {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .textIn {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .drawer {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        width: 10%;
+    }
+
+
+
+    .drawer .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 687px) {
+    .restaurant-item {
+        width: 45%;
+
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .restaurant-item {
+        width: 100%;
+        align-items: center;
+
+    }
+}
